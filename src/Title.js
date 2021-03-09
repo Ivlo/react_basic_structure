@@ -1,3 +1,5 @@
 import React from "react";
-const Title = ({ children, size }) => <h1 size={size}>{children}</h1>;
+import { TitleStyled } from "./TitleStyled";
+
+const Title = ({ children, size }) => <TitleStyled size={size}>{children}</TitleStyled>;
 export default Title;

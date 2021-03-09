@@ -1,10 +1,18 @@
 import React from "react";
+import { ThemeProvider } from "styled-components";
+
 import Title from "./Title";
+
+import GlobalStyles from "./styles/globalStyles";
+import theme from "./styles/theme";
 
 const App = () => {
   return (
     <>
-      <Title size="small">Va bien la mandanga Ivlo</Title>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Title size="small">Set up React</Title>
+      </ThemeProvider>
     </>
   );
 };
